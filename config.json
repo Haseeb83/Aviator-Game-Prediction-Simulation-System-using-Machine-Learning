@@ -1,0 +1,22 @@
+{
+  "dataset_path": "aviator_dataset_clean.csv",
+  "test_size": 0.2,
+  "random_state": 42,
+  "models": {
+    "RandomForest": {
+      "n_estimators": 100,
+      "max_depth": 10,
+      "random_state": 42
+    },
+    "GradientBoosting": {
+      "n_estimators": 100,
+      "learning_rate": 0.1,
+      "random_state": 42
+    },
+    "LinearRegression": {}
+  },
+  "prediction_threshold": 2.0,
+  "bet_amount": 1.0,
+  "feature_columns": ["color", "mean", "var", "next_approximate"],
+  "target_column": "target"
+}
